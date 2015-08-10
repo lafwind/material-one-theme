@@ -44,7 +44,7 @@
        (current-line "#212121") ;; tree-row
        (far-background "#1c1f26") ;; panel-control
        (subtle "#a7adba") ;; tree-row-hover-disclosure-button-control
-       (selection "#ebcb8b") ;; tab-control-dirty-tab-close-button
+       (selection "#FFCC80") ;; tab-control-dirty-tab-close-button
        (secondary-selection "#bf616a") ;; tab-control-hover-tab-close-button
        ;; (foreground "#ffffff")
        (foreground "#fafafa") ;;; by lafwind
