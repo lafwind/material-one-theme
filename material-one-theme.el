@@ -41,10 +41,10 @@
        (256color (eq (display-color-cells (selected-frame)) 256))
 
        (background "#101010") ;; sidebar-container, by lafwind
-       (current-line "#1f1f1f") ;; tree-row
+       (current-line "#002A1A") ;; tree-row
        (far-background "#1c1f26") ;; panel-control
        (subtle "#a7adba") ;; tree-row-hover-disclosure-button-control
-       (selection "#FFB74D") ;; tab-control-dirty-tab-close-button
+       (selection "#673AB7") ;; tab-control-dirty-tab-close-button
        (secondary-selection "#bf616a") ;; tab-control-hover-tab-close-button
        ;; (foreground "#ffffff")
        (foreground "#fafafa") ;;; by lafwind
@@ -61,9 +61,10 @@
        (m_red "#FF4081")
        (m_blue "#1E88E5")
        (m_sky_blue "#81D4FA")
-       (m_green "#4CAF50")
-       (m_spring_green "#AED581")
+       (m_green "#4DB6AC")
+       (m_spring_green "#8BC34A")
        (m_purple "#BA68C8")
+       (m_orange "#FFB74D")
        (m_yellow "#FFF59D")
        (m_dir "#616161")
        )
@@ -96,7 +97,7 @@
    `(font-lock-keyword-face ((,class (:foreground ,m_purple))))
    `(font-lock-variable-name-face ((,class (:foreground ,m_red))))
    `(font-lock-type-face ((,class (:foreground ,m_yellow))))
-   `(font-lock-constant-face ((,class (:foreground ,m_green))))
+   `(font-lock-constant-face ((,class (:foreground ,m_orange))))
    `(font-lock-string-face ((,class (:foreground ,m_spring_green))))
    `(font-lock-builtin-face ((,class (:foreground ,m_sky_blue))))
    `(font-lock-preprocessor-face ((,class (:foreground ,m_hot_pink))))
@@ -297,7 +298,7 @@
    ;; neotree
    `(neo-dir-link-face ((t (:foreground ,m_dir))))
    ; '(neo-file-link-face ((t (:foreground "#A8B1B8"))))
-   `(neo-file-link-face ((t (:foreground "#919AA6"))))
+   `(neo-file-link-face ((t (:foreground "#8a8a8a"))))
    `(neo-expand-btn-face ((t (:foreground ,m_dir))))
    `(neo-banner-face ((t (:foreground ,m_dir))))
    `(neo-header-face ((t (:foreground ,m_dir))))
