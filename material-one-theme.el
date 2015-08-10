@@ -40,8 +40,8 @@
 (let* ((class '((class color) (min-colors 89)))
        (256color (eq (display-color-cells (selected-frame)) 256))
 
-       (background "#212121") ;; sidebar-container, by lafwind
-       (current-line "#343d46") ;; tree-row
+       (background "#191919") ;; sidebar-container, by lafwind
+       (current-line "#212121") ;; tree-row
        (far-background "#1c1f26") ;; panel-control
        (subtle "#a7adba") ;; tree-row-hover-disclosure-button-control
        (selection "#ebcb8b") ;; tab-control-dirty-tab-close-button
@@ -56,15 +56,15 @@
        (aqua "#89EBCA") ;; lighter complement tab-control-dirty-tab-close-button
        (blue "#89AAEB") ;; complement tab-control-dirty-tab-close-button
        (purple "#C189EB") ;; complement tab-control-dirty-tab-close-button
-       (m_pink "#f8bbd0")
+       (m_pink "#F06292")
        (m_hot_pink "#EC407A")
-       (m_red "#EF5350")
-       (m_blue "#1565C0")
-       (m_sky_blue "#29B6F6")
-       (m_green "#388E3C")
-       (m_spring_green "#9CCC65")
-       (m_purple "#AB47BC")
-       (m_yellow "#FDD835")
+       (m_red "#EF9A9A")
+       (m_blue "#1E88E5")
+       (m_sky_blue "#81D4FA")
+       (m_green "#66BB6A")
+       (m_spring_green "#AED581")
+       (m_purple "#CE93D8")
+       (m_yellow "#FFF59D")
        (m_selection "#EE793F")
        )
 
@@ -293,6 +293,16 @@
    `(diredp-read-priv ((,class (:foreground ,green :background nil))))
    `(diredp-symlink ((,class (:foreground ,purple))))
    `(diredp-write-priv ((,class (:foreground ,yellow :background nil))))
+
+   ;; neotree
+   '(neo-dir-link-face ((t (:foreground "#515A66"))))
+   ; '(neo-file-link-face ((t (:foreground "#A8B1B8"))))
+   '(neo-file-link-face ((t (:foreground "#919AA6"))))
+   '(neo-expand-btn-face ((t (:foreground "#515A66"))))
+   '(neo-banner-face ((t (:foreground "#515A66"))))
+   '(neo-header-face ((t (:foreground "#515A66"))))
+   '(neo-button-face ((t (:foreground "#515A66"))))
+   '(neo-root-dir-face ((t (:foreground "EEA2AD"))))
 
    ;; Magit (a patch is pending in magit to make these standard upstream)
    `(magit-branch ((,class (:foreground ,green))))
