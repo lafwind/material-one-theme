@@ -41,14 +41,14 @@
        (256color (eq (display-color-cells (selected-frame)) 256))
 
        (background "#191919") ;; sidebar-container, by lafwind
-       (current-line "#212121") ;; tree-row
+       (current-line "#2a2a2a") ;; tree-row
        (far-background "#1c1f26") ;; panel-control
        (subtle "#a7adba") ;; tree-row-hover-disclosure-button-control
-       (selection "#FFCC80") ;; tab-control-dirty-tab-close-button
+       (selection "#FFB74D") ;; tab-control-dirty-tab-close-button
        (secondary-selection "#bf616a") ;; tab-control-hover-tab-close-button
        ;; (foreground "#ffffff")
        (foreground "#fafafa") ;;; by lafwind
-       (comment "#4f5b67") ;; table-row
+       (comment "#4a4a4a") ;; table-row
        (red "#bf616a") ;; tab-control-hover-tab-close-button
        (orange "#DCA432") ;; darker tab-control-dirty-tab-close-butto
        (yellow "#ebcb8b") ;; tab-control-dirty-tab-close-button
@@ -65,7 +65,7 @@
        (m_spring_green "#AED581")
        (m_purple "#CE93D8")
        (m_yellow "#FFF59D")
-       (m_selection "#EE793F")
+       (m_dir "#616161")
        )
 
   (custom-theme-set-faces
@@ -92,13 +92,13 @@
    ; `(font-lock-preprocessor-face ((,class (:foreground "gold"))))
 
    ;;; by lafwind
-   `(font-lock-function-name-face ((,class (:foreground ,m_blue))))
+   `(font-lock-function-name-face ((,class (:foreground ,m_green))))
    `(font-lock-keyword-face ((,class (:foreground ,m_purple))))
    `(font-lock-variable-name-face ((,class (:foreground ,m_red))))
    `(font-lock-type-face ((,class (:foreground ,m_yellow))))
-   `(font-lock-constant-face ((,class (:foreground ,m_sky_blue))))
-   `(font-lock-string-face ((,class (:foreground ,m_green))))
-   `(font-lock-builtin-face ((,class (:foreground ,m_spring_green))))
+   `(font-lock-constant-face ((,class (:foreground ,m_blue))))
+   `(font-lock-string-face ((,class (:foreground ,m_spring_green))))
+   `(font-lock-builtin-face ((,class (:foreground ,m_sky_blue))))
    `(font-lock-preprocessor-face ((,class (:foreground ,m_hot_pink))))
 
 
@@ -295,14 +295,14 @@
    `(diredp-write-priv ((,class (:foreground ,yellow :background nil))))
 
    ;; neotree
-   '(neo-dir-link-face ((t (:foreground "#515A66"))))
+   `(neo-dir-link-face ((t (:foreground ,m_dir))))
    ; '(neo-file-link-face ((t (:foreground "#A8B1B8"))))
-   '(neo-file-link-face ((t (:foreground "#919AA6"))))
-   '(neo-expand-btn-face ((t (:foreground "#515A66"))))
-   '(neo-banner-face ((t (:foreground "#515A66"))))
-   '(neo-header-face ((t (:foreground "#515A66"))))
-   '(neo-button-face ((t (:foreground "#515A66"))))
-   '(neo-root-dir-face ((t (:foreground "EEA2AD"))))
+   `(neo-file-link-face ((t (:foreground "#919AA6"))))
+   `(neo-expand-btn-face ((t (:foreground ,m_dir))))
+   `(neo-banner-face ((t (:foreground ,m_dir))))
+   `(neo-header-face ((t (:foreground ,m_dir))))
+   `(neo-button-face ((t (:foreground ,m_dir))))
+   `(neo-root-dir-face ((t (:foreground "EEA2AD"))))
 
    ;; Magit (a patch is pending in magit to make these standard upstream)
    `(magit-branch ((,class (:foreground ,green))))
