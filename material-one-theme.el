@@ -4,7 +4,7 @@
 
 ;; Author: Lafwind Li <lafwind@gmail.com>
 ;; Keywords: themes
-;; Package-Version: 20150810.1231
+;; Package-Version: 20150810.1939
 ;; URL: http://github.com/lafwind/material-one-theme
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "24.1"))
@@ -58,12 +58,12 @@
        (purple "#C189EB") ;; complement tab-control-dirty-tab-close-button
        (m_pink "#F06292")
        (m_hot_pink "#EC407A")
-       (m_red "#EF9A9A")
+       (m_red "#FF4081")
        (m_blue "#1E88E5")
        (m_sky_blue "#81D4FA")
-       (m_green "#66BB6A")
+       (m_green "#4CAF50")
        (m_spring_green "#AED581")
-       (m_purple "#CE93D8")
+       (m_purple "#BA68C8")
        (m_yellow "#FFF59D")
        (m_dir "#616161")
        )
