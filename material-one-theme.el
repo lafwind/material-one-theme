@@ -40,8 +40,8 @@
 (let* ((class '((class color) (min-colors 89)))
        (256color (eq (display-color-cells (selected-frame)) 256))
 
-       (background "#191919") ;; sidebar-container, by lafwind
-       (current-line "#2a2a2a") ;; tree-row
+       (background "#101010") ;; sidebar-container, by lafwind
+       (current-line "#1f1f1f") ;; tree-row
        (far-background "#1c1f26") ;; panel-control
        (subtle "#a7adba") ;; tree-row-hover-disclosure-button-control
        (selection "#FFB74D") ;; tab-control-dirty-tab-close-button
@@ -92,11 +92,11 @@
    ; `(font-lock-preprocessor-face ((,class (:foreground "gold"))))
 
    ;;; by lafwind
-   `(font-lock-function-name-face ((,class (:foreground ,m_green))))
+   `(font-lock-function-name-face ((,class (:foreground ,m_blue))))
    `(font-lock-keyword-face ((,class (:foreground ,m_purple))))
    `(font-lock-variable-name-face ((,class (:foreground ,m_red))))
    `(font-lock-type-face ((,class (:foreground ,m_yellow))))
-   `(font-lock-constant-face ((,class (:foreground ,m_blue))))
+   `(font-lock-constant-face ((,class (:foreground ,m_green))))
    `(font-lock-string-face ((,class (:foreground ,m_spring_green))))
    `(font-lock-builtin-face ((,class (:foreground ,m_sky_blue))))
    `(font-lock-preprocessor-face ((,class (:foreground ,m_hot_pink))))
