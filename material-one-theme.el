@@ -40,15 +40,15 @@
 (let* ((class '((class color) (min-colors 89)))
        (256color (eq (display-color-cells (selected-frame)) 256))
 
-       (background "#101010") ;; sidebar-container, by lafwind
-       (current-line "#002A1A") ;; tree-row
+       (background "#1a1a1a") ;; sidebar-container, by lafwind
+       (current-line "#003023") ;; tree-row
        (far-background "#1c1f26") ;; panel-control
-       (subtle "#a7adba") ;; tree-row-hover-disclosure-button-control
+       (subtle "#9E9E9E") ;; tree-row-hover-disclosure-button-control
        (selection "#673AB7") ;; tab-control-dirty-tab-close-button
        (secondary-selection "#bf616a") ;; tab-control-hover-tab-close-button
        ;; (foreground "#ffffff")
        (foreground "#fafafa") ;;; by lafwind
-       (comment "#4a4a4a") ;; table-row
+       (comment "#505050") ;; table-row
        (red "#bf616a") ;; tab-control-hover-tab-close-button
        (orange "#DCA432") ;; darker tab-control-dirty-tab-close-butto
        (yellow "#ebcb8b") ;; tab-control-dirty-tab-close-button
@@ -66,6 +66,7 @@
        (m_purple "#BA68C8")
        (m_orange "#FFB74D")
        (m_yellow "#FFF59D")
+       (m_grey "#263238")
        (m_dir "#616161")
        )
 
@@ -321,6 +322,10 @@
    `(magit-log-head-label-tags ((,class (:foreground ,aqua :box nil :weight bold))))
    `(magit-log-sha1 ((,class (:foreground ,yellow))))
    `(magit-section-title ((,class (:foreground ,blue :weight bold))))
+   `(magit-diff-context-highlight ((,class (:background ,m_grey))))
+   `(magit-section-highlight ((,class (:background ,m_grey))))
+   ;; `(magit-diff-context-highlight ((,class (:background "#252525"))))
+   ;; `(magit-section-highlight ((,class (:background "#252525"))))
 
    ;; git-gutter
    `(git-gutter:modified ((,class (:foreground ,purple :weight bold))))
@@ -671,10 +676,5 @@
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'material-one)
-
-;; Local Variables:
-;; rainbow-mode: t
-;; hl-sexp-mode: nil
-;; End:
 
 ;;; material-one-theme.el ends here
