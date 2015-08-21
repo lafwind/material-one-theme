@@ -40,8 +40,8 @@
 (let* ((class '((class color) (min-colors 89)))
        (256color (eq (display-color-cells (selected-frame)) 256))
 
-       (background "#1a1a1a") ;; sidebar-container, by lafwind
-       (current-line "#003023") ;; tree-row
+       (background "#212121") ;; sidebar-container, by lafwind
+       (current-line "#003a1a") ;; tree-row
        (far-background "#1c1f26") ;; panel-control
        (subtle "#9E9E9E") ;; tree-row-hover-disclosure-button-control
        (selection "#673AB7") ;; tab-control-dirty-tab-close-button
