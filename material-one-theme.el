@@ -41,7 +41,7 @@
        (256color (eq (display-color-cells (selected-frame)) 256))
 
        (background "#212121") ;; sidebar-container, by lafwind
-       (current-line "#003a1a") ;; tree-row
+       (current-line "#2a2a2a") ;;#003a1a tree-row
        (far-background "#1c1f26") ;; panel-control
        (subtle "#9E9E9E") ;; tree-row-hover-disclosure-button-control
        (selection "#673AB7") ;; tab-control-dirty-tab-close-button
@@ -204,7 +204,7 @@
    `(mode-line-emphasis ((,class (:foreground ,foreground :slant italic))))
    `(mode-line-highlight ((,class (:foreground ,purple :box nil))))
    `(minibuffer-prompt ((,class (:foreground ,blue))))
-   `(region ((,class (:background ,selection :foreground ,background))))
+   `(region ((,class (:background ,selection :foreground ,foreground))))
    `(secondary-selection ((,class (:background ,secondary-selection))))
 
    `(header-line ((,class (:inherit mode-line :foreground ,purple :background nil))))
